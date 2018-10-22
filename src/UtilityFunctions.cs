@@ -11,6 +11,7 @@ using SwinGameSDK;
 /// </summary>
 static class UtilityFunctions
 {
+	private static int _currentBackground = 1;
 	public const int FIELD_TOP = 122;
 	public const int FIELD_LEFT = 349;
 	public const int FIELD_WIDTH = 418;
@@ -42,6 +43,8 @@ static class UtilityFunctions
 	public const int ANIMATION_CELLS = 7;
 
 	public const int FRAMES_PER_CELL = 4;
+
+
 	/// <summary>
 	/// Determines if the mouse is in a given rectangle.
 	/// </summary>
@@ -202,6 +205,13 @@ static class UtilityFunctions
 		}
 	}
 
+	//checkbackground
+		public static void ChangeBackground ()
+		{
+			if (_currentBackground >= 4)
+				_currentBackground = 1;
+			else
+				_currentBackground++;		}
 
 	private static string _message;
 	/// <summary>
@@ -237,7 +247,7 @@ static class UtilityFunctions
 				break;
 			case GameState.Discovering:
 			case GameState.EndingGame:
-			SwinGame.DrawBitmap(GameResources.GameImage("Discovery"), 0, 0);
+			SwinGame.DrawBitmap(GameResources.GameImage("Discovery_"+_currentBackground.ToString()), 0, 0);
 				break;
 			case GameState.Deploying:
 			SwinGame.DrawBitmap(GameResources.GameImage("Deploy"), 0, 0);

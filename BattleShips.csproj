@@ -280,20 +280,48 @@
     <None Include="Resources\sounds\death.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\images\ship_deploy_horiz_1_2.png" />
-    <None Include="Resources\images\ship_deploy_horiz_2_2.png" />
-    <None Include="Resources\images\ship_deploy_horiz_3_2.png" />
-    <None Include="Resources\images\ship_deploy_horiz_4_2.png" />
-    <None Include="Resources\images\ship_deploy_horiz_5_2.png" />
-    <None Include="Resources\images\ship_deploy_vert_1_2.png" />
-    <None Include="Resources\images\ship_deploy_vert_2_2.png" />
-    <None Include="Resources\images\ship_deploy_vert_3_2.png" />
-    <None Include="Resources\images\ship_deploy_vert_4_2.png" />
-    <None Include="Resources\images\ship_deploy_vert_5_2.png" />
-    <None Include="Resources\images\discover_1.jpg" />
-    <None Include="Resources\images\discover_2.jpg" />
-    <None Include="Resources\images\discover_3.jpg" />
-    <None Include="Resources\images\discover_4.jpg" />
+    <None Include="Resources\images\ship_deploy_horiz_1_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_horiz_2_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_horiz_3_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_horiz_4_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_horiz_5_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_vert_1_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_vert_2_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_vert_3_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_vert_4_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\ship_deploy_vert_5_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\discover_1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\discover_2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\discover_3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\discover_4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

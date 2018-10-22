@@ -22,6 +22,10 @@ public static class GameResources
 		//Backgrounds
 		NewImage("Menu", "main_page.jpg");
 		NewImage("Discovery", "discover.jpg");
+        NewImage ("Discovery_1", "discover_1.jpg");
+        NewImage ("Discovery_2", "discover_2.jpg");
+        NewImage ("Discovery_3", "discover_3.jpg");
+        NewImage ("Discovery_4", "discover_4.jpg");
 		NewImage("Deploy", "deploy.jpg");
 
 		//Deployment
