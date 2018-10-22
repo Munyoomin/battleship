@@ -162,7 +162,7 @@ public static class GameController
 		switch (result.Value) {
 			case ResultOfAttack.Destroyed:
 				PlayHitSequence(result.Row, result.Column, isHuman);
-			Audio.PlaySoundEffect(GameResources.GameSound("Sink"));
+			Audio.PlaySoundEffect(GameResources.GameSound("Lose"));
 
 				break;
 			case ResultOfAttack.GameOver:
