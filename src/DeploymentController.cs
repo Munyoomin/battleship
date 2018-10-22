@@ -101,7 +101,7 @@ static class DeploymentController
 		int col = 0;
 		int prevrow = GameController.HumanPlayer.Ship (_selectedShip).Row;
 		int prevcol = GameController.HumanPlayer.Ship (_selectedShip).Column;
-
+		Direction prevDirection = GameController.HumanPlayer.Ship (_selectedShip).Direction;
 		row = Convert.ToInt32(Math.Floor((mouse.Y - UtilityFunctions.FIELD_TOP) / (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP)));
 		col = Convert.ToInt32(Math.Floor((mouse.X - UtilityFunctions.FIELD_LEFT) / (UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP)));
 
