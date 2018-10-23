@@ -15,7 +15,7 @@ public static class GameResources
 		NewFont("Courier", "cour.ttf", 14);
 		NewFont("CourierSmall", "cour.ttf", 8);
 		NewFont("Menu", "ffaccess.ttf", 8);
-		NewFont("AgentOrange", "AgentOrange.ttf", 48);
+		NewFont("AgentOrange", "AgentOrange.ttf", 36);
         NewFont("Maven", "maven_pro_regular.ttf", 48);
 	}
 
