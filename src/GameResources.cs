@@ -15,6 +15,8 @@ public static class GameResources
 		NewFont("Courier", "cour.ttf", 14);
 		NewFont("CourierSmall", "cour.ttf", 8);
 		NewFont("Menu", "ffaccess.ttf", 8);
+		NewFont ("OrkneyMedium", "OrkneyMedium.ttf", 48);
+		NewFont ("Agent", "AgentOrange.ttf", 48);
 	}
 
 	private static void LoadImages()
@@ -62,6 +64,8 @@ public static class GameResources
 		NewSound("Winner", "winner.wav");
 		NewSound("Lose", "lose.wav");
         NewSound ("Death", "death.wav");
+		NewSound ("Gameover", "gameover.wav");
+		NewSound ("Win", "win.wav");
 	}
 
 	private static void LoadMusic()
@@ -123,8 +127,8 @@ public static class GameResources
 	private static Bitmap _LoaderFull;
 	private static Bitmap _LoaderEmpty;
 	private static Font _LoadingFont;
-
 	private static SoundEffect _StartSound;
+
 	/// <summary>
 	/// The Resources Class stores all of the Games Media Resources, such as Images, Fonts
 	/// Sounds, Music.
