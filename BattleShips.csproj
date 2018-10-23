@@ -159,6 +159,9 @@
     <None Include="Resources\fonts\maven_pro_regular.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+	<None Include="Resources\fonts\OrkneyMedium.ttf">
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\images\deploy.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -348,10 +351,7 @@
     <None Include="Resources\images\Paint_Button.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\fonts\OrkneyMedium.ttf" />
-    <None Include="Resources\fonts\AgentOrange.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\fonts\AgentOrange.ttf" />
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />
