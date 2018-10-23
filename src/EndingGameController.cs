@@ -16,6 +16,8 @@ static class EndingGameController
 
 	/// <summary>
 	/// Draw the end of the game screen, shows the win/lose state
+	/// when player lose or win the game, display text with specified font, color and message box background color
+	/// and delay the time for 5 seconds
 	/// </summary>
 	public static void DrawEndOfGame()
 	{
