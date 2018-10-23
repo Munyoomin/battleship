@@ -179,21 +179,21 @@ static class UtilityFunctions
 		string shipName = null;
 
 		//Draw the ships
-		foreach (Ship s in thePlayer) {
+foreach (Ship s in thePlayer) {
 			if (s == null || !s.IsDeployed)
 				continue;
 			rowTop = top + (cellGap + cellHeight) * s.Row + SHIP_GAP;
 			colLeft = left + (cellGap + cellWidth) * s.Column + SHIP_GAP;
-
+			int j = (int)s.CurrentShipColour;
 			if (s.Direction == Direction.LeftRight) {
-				shipName = "ShipLR" + s.Size;
-				shipHeight = cellHeight - (SHIP_GAP * 2);
-				shipWidth = (cellWidth + cellGap) * s.Size - (SHIP_GAP * 2) - cellGap;
+					shipName = "ShipLR" + s.Size+ "a" + j;
+				shipHeight = cellHeight - (SHIP_GAP* 2);
+				shipWidth = (cellWidth + cellGap) * s.Size - (SHIP_GAP* 2) - cellGap;
 			} else {
 				//Up down
-				shipName = "ShipUD" + s.Size;
-				shipHeight = (cellHeight + cellGap) * s.Size - (SHIP_GAP * 2) - cellGap;
-				shipWidth = cellWidth - (SHIP_GAP * 2);
+					shipName = "ShipUD" + s.Size + "a" + j;
+				shipHeight = (cellHeight + cellGap) * s.Size - (SHIP_GAP* 2) - cellGap;
+				shipWidth = cellWidth - (SHIP_GAP* 2);
 			}
 
 			if (!small) {

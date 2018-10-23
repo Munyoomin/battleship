@@ -35,13 +35,18 @@ public static class GameResources
 		NewImage("PlayButton", "deploy_play_button.png");
 		NewImage("RandomButton", "deploy_randomize_button.png");
 
+		NewImage ("PaintButton", "Paint_Button.png");
+
 		//Ships
 		int i = 0;
+		int j = 1;
 		for (i = 1; i <= 5; i++) {
-			NewImage("ShipLR" + i, "ship_deploy_horiz_" + i + ".png");
-			NewImage("ShipUD" + i, "ship_deploy_vert_" + i + ".png");
+				for (j = 1; j <= 2; j++)
+				{
+					NewImage ("ShipLR" + i + "a" + j, "ship_deploy_horiz_" + i  + "_" + j + ".png");
+					NewImage ("ShipUD" + i + "a" + j, "ship_deploy_vert_" + i   + "_" + j + ".png");
+				}
 		}
-
 		//Explosions
 		NewImage("Explosion", "explosion.png");
 		NewImage("Splash", "splash.png");

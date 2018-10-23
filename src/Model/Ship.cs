@@ -21,6 +21,7 @@ public class Ship
 	private List<Tile> _tiles;
 	private int _row;
 	private int _col;
+	private ShipColour _shipColour = ShipColour.Blue;
 
 	private Direction _direction;
 	/// <summary>
@@ -28,6 +29,12 @@ public class Ship
 	/// </summary>
 	/// <value>The type of ship</value>
 	/// <returns>The type of ship</returns>
+
+	public ShipColour CurrentShipColour {
+		get { return _shipColour; }
+		set { _shipColour = value; }
+	}
+
 	public string Name {
 		get {
 			if (_shipName == ShipName.AircraftCarrier) {
