@@ -78,9 +78,56 @@ static class DiscoveryController
 		SwinGame.DrawText(GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SHOTS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Hits.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, HITS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);
+	
+	foreach (ShipName sn in Enum.GetValues(typeof(ShipName))) {
+				if (object.ReferenceEquals (GameController.ComputerPlayer.Ship (sn), null))
+				{
+				}
+				else
+				{
+					if (GameController.ComputerPlayer.Ship (sn).IsDestroyed)
+					{
+						int i = 0;
+								i = (int)sn - 1;
+								int rowTop = 122 + (2 + 40) * GameController.ComputerPlayer.Ship (sn).Row + 3;
+								int colLeft = 349 + (2 + 40) * GameController.ComputerPlayer.Ship (sn).Column + 3;
+								if (i >= 0)
+							{
+								string shipName = null;
+								int shipHeight = 0;
+								int shipWidth = 0;
+								int cellHeight = 40;
+								int SHIP_GAP = 3;
+								int cellWidth = 40;
+								int cellGap = 2;
+								int j = (int)GameController.ComputerPlayer.Ship (sn).CurrentShipColour;
+							if (GameController.ComputerPlayer.Ship (sn).Direction == Direction.LeftRight) {
+								shipName = "ShipLR" + GameController.ComputerPlayer.Ship (sn).Size+ "a" + j;
+								shipHeight = cellHeight - (SHIP_GAP* 2);
+								shipWidth = (cellWidth + cellGap) * GameController.ComputerPlayer.Ship (sn).Size - (SHIP_GAP* 2) - cellGap;
+							} else {
+								//Up down
+								shipName = "ShipUD" + GameController.ComputerPlayer.Ship (sn).Size + "a" + j;
+								shipHeight = (cellHeight + cellGap) * GameController.ComputerPlayer.Ship (sn).Size - (SHIP_GAP* 2) - cellGap;
+								shipWidth = cellWidth - (SHIP_GAP* 2);
+							}
+							
+							SwinGame.DrawBitmap(GameResources.GameImage (shipName), colLeft, rowTop);
+
+							
+						}
+
+					}
+				}
+			}
+
 	}
 
+
 }
+
+
+
 
 //=======================================================
 //Service provided by Telerik (www.telerik.com)
