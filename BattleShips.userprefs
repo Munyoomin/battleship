@@ -11,7 +11,7 @@
       <File FileName="src\GameController.cs" Line="166" Column="4" />
       <File FileName="src\Model\Player.cs" Line="80" Column="14" />
       <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="src\DeploymentController.cs" Line="156" Column="3" />
+      <File FileName="src\DeploymentController.cs" Line="1" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIHardPlayer.cs" Line="173" Column="9" />
       <File FileName="src\Model\SeaGrid.cs" Line="189" Column="29" />
@@ -23,6 +23,7 @@
       <File FileName="src\Model\ResultOfAttack.cs" Line="1" Column="1" />
       <File FileName="src\Model\ShipName.cs" Line="1" Column="1" />
       <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
+      <File FileName="src\UtilityFunctions.cs" Line="1" Column="1" />
       <File FileName="battleship Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
