@@ -32,6 +32,14 @@ static class DiscoveryController
 			{
 				UtilityFunctions.ChangeBackground ();
 			}
+		if (SwinGame.KeyTyped (KeyCode.vk_0)) {
+			SwinGame.StopMusic ();
+		}else {
+			if (SwinGame.KeyTyped (KeyCode.vk_1))
+				SwinGame.PlayMusic(GameResources.GameMusic("Background"));
+			
+
+		}
 	}
 
 	/// <summary>
