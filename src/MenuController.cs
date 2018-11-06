@@ -26,6 +26,7 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
+			"HOTKEYS",
 			"QUIT"
 		},
 		new string[] {
@@ -54,6 +55,7 @@ static class MenuController
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+	private const int MAIN_MENU_HOTKEYS_BUTTON = 4;
 
 	private const int MAIN_MENU_QUIT_BUTTON = 3;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
@@ -257,21 +259,24 @@ static class MenuController
 	/// The main menu was clicked, perform the button's action.
 	/// </summary>
 	/// <param name="button">the button pressed</param>
-	private static void PerformMainMenuAction(int button)
+	private static void PerformMainMenuAction (int button)
 	{
 		switch (button) {
-			case MAIN_MENU_PLAY_BUTTON:
-			GameController.StartGame();
-				break;
-			case MAIN_MENU_SETUP_BUTTON:
-			GameController.AddNewState(GameState.AlteringSettings);
-				break;
-			case MAIN_MENU_TOP_SCORES_BUTTON:
-			GameController.AddNewState(GameState.ViewingHighScores);
-				break;
-			case MAIN_MENU_QUIT_BUTTON:
-			GameController.EndCurrentState();
-				break;
+		case MAIN_MENU_PLAY_BUTTON:
+			GameController.StartGame ();
+			break;
+		case MAIN_MENU_SETUP_BUTTON:
+			GameController.AddNewState (GameState.AlteringSettings);
+			break;
+		case MAIN_MENU_TOP_SCORES_BUTTON:
+			GameController.AddNewState (GameState.ViewingHighScores);
+			break;
+		case MAIN_MENU_QUIT_BUTTON:
+			GameController.EndCurrentState ();
+			break;
+		case MAIN_MENU_HOTKEYS_BUTTON:
+			GameResources.GameImage ("HotkeysButton");
+			break;
 		}
 	}
 

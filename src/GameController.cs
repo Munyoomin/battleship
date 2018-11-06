@@ -171,7 +171,6 @@ public static class GameController
 
 			while (Audio.SoundEffectPlaying(GameResources.GameSound("Sink"))) {
 					SwinGame.Delay(10);
-					SwinGame.RefreshScreen();
 				}
 
 				if (HumanPlayer.IsDestroyed) {
