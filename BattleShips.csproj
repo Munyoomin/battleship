@@ -339,7 +339,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\fonts\AgentOrange.ttf" />
-    <None Include="Resources\images\discover_1.jpg" />
+    <None Include="Resources\images\discover_1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\images\discover_2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
