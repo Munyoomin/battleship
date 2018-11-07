@@ -26,7 +26,6 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
-			"HOTKEYS",
 			"QUIT"
 		},
 		new string[] {
@@ -273,9 +272,6 @@ static class MenuController
 			break;
 		case MAIN_MENU_QUIT_BUTTON:
 			GameController.EndCurrentState ();
-			break;
-		case MAIN_MENU_HOTKEYS_BUTTON:
-			GameResources.GameImage ("HotkeysButton");
 			break;
 		}
 	}
