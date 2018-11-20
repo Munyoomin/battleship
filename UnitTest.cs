@@ -31,7 +31,13 @@ namespace BattleShips
 			bool expected = true;
 			bool actual = testShip.IsDestroyed;
 			Assert.AreEqual (expected, actual);		 }
-
-
+		[Test ()]
+		public void TestAI ()
+		{
+			GameController.SetDifficulty (AIOption.Hard);
+			GameController.StartGame ();
+			Assert.IsNotInstanceOf<AIMediumPlayer> (GameController.ComputerPlayer);
+			Assert.IsInstanceOf<AIHardPlayer> (GameController.ComputerPlayer);
+		}
 	}
 }
