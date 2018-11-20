@@ -23,6 +23,7 @@ namespace BattleShips
 			testShip.Hit ();
 
 			Assert.IsTrue (testShip.Hits == 2);		 }
+
 		[Test ()]
 		public void IsDestroyedTest ()
 		{
@@ -31,6 +32,7 @@ namespace BattleShips
 			bool expected = true;
 			bool actual = testShip.IsDestroyed;
 			Assert.AreEqual (expected, actual);		 }
+
 		[Test ()]
 		public void TestAI ()
 		{
@@ -39,5 +41,34 @@ namespace BattleShips
 			Assert.IsNotInstanceOf<AIMediumPlayer> (GameController.ComputerPlayer);
 			Assert.IsInstanceOf<AIHardPlayer> (GameController.ComputerPlayer);
 		}
+
+        [Test ()]
+        public void TestSetDifficulty ()
+        {
+            GameController.SetDifficulty (AIOption.Easy);
+            Assert.AreEqual (AIOption.Easy, GameController.DifficultyOption ());
+
+            GameController.SetDifficulty (AIOption.Medium);
+            Assert.AreEqual (AIOption.Medium, GameController.DifficultyOption ());
+        }
+
+        [Test ()]
+        public void TestShipColour ()
+        {
+            ShipColour newShip = new ShipColour ();
+            newShip = ShipColour.Red;
+            Assert.AreEqual (ShipColour.Red, newShip);
+
+        }
+
+        [Test ()]
+        public void TestTile ()
+        {
+            Ship myShip = new Ship (ShipName.Battleship);
+            Tile mytile = new Tile (3, 3, myShip);
+
+            mytile.Shot = true;
+            Assert.IsTrue (mytile.Shot);
+        }
 	}
 }

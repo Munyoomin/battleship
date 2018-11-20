@@ -376,6 +376,10 @@ public static class GameController
 		_aiSetting = setting;
 	}
 
+    public static AIOption DifficultyOption ()
+    {
+        return _aiSetting;
+    }
 }
 
 //=======================================================
