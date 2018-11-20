@@ -105,6 +105,7 @@
     <Compile Include="src\MenuController.cs" />
     <Compile Include="src\UtilityFunctions.cs" />
     <Compile Include="src\Model\ShipColour.cs" />
+    <Compile Include="UnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
@@ -114,7 +115,6 @@
     <Reference Include="System" />
     <Reference Include="nunit.framework">
       <HintPath>packages\NUnit.3.10.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
